@@ -37,7 +37,8 @@ impl<'a> Sfy for &'a str {
 }
 
 impl<T> Sfy for [T]
-    where T: Sfy
+where
+    T: Sfy,
 {
     fn sfy(&self) -> String {
         let v: Vec<String> = self.into_iter().map(|e| e.sfy()).collect();
@@ -46,7 +47,8 @@ impl<T> Sfy for [T]
 }
 
 impl<T, I: Iterator<Item = T>> MutSfy for I
-    where T: Sfy
+where
+    T: Sfy,
 {
     fn sfy(&mut self) -> String {
         let v: Vec<String> = self.map(|e| e.sfy()).collect();

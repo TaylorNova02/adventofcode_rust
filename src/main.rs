@@ -46,7 +46,7 @@ fn main() {
         (2015, 7) => year_2015::day07::run(inputs::read(year, day)),
         (2015, 8) => year_2015::day08::run(inputs::read(year, day)),
         (2015, 9) => year_2015::day09::run(inputs::read(year, day)),
-        (2015, 10) => year_2015::day10::run("3113322113"),
+        (2015, 10) => year_2015::day10::run("1113222113"),
         (2015, 11) => year_2015::day11::run("vzbxkghb"),
         (2015, 12) => year_2015::day12::run(&inputs::read_first_line(year, day)),
         (2015, 13) => year_2015::day13::run(inputs::read(year, day)),
@@ -56,7 +56,7 @@ fn main() {
         (2015, 17) => year_2015::day17::run(inputs::read(year, day)),
         (2015, 18) => year_2015::day18::run(inputs::read(year, day)),
         // (2015, 19) => year_2015::day19::run(inputs::read(year, day)),
-        // (2015, 20) => year_2015::day20::run(inputs::read(year, day)),
+        // (2015, 20) => year_2015::day20::run("34000000"),
         // (2015, 21) => year_2015::day21::run(inputs::read(year, day)),
         // (2015, 22) => year_2015::day22::run(inputs::read(year, day)),
         // (2015, 23) => year_2015::day23::run(inputs::read(year, day)),
@@ -85,7 +85,9 @@ fn main() {
         (2016, 18) => year_2016::day18::solve(&inputs::grab_local_input(year, day)),
         (2016, 19) => year_2016::day19::solve(3005290),
         (2016, 20) => year_2016::day20::solve(&inputs::grab_local_input(year, day)),
-        (2016, 21) => year_2016::day21::solve(&inputs::grab_local_input(year, day), "abcdefgh", "fbgdceah"),
+        (2016, 21) => {
+            year_2016::day21::solve(&inputs::grab_local_input(year, day), "abcdefgh", "fbgdceah")
+        }
         // (2016, 22) => year_2016::day22::solve(&inputs::grab_local_input(year, day)),
         //(2016, 23) => year_2016::day23::solve(&inputs::grab_local_input(year, day)),
         // (2016, 24) => year_2016::day24::solve(&inputs::grab_local_input(year, day)),
