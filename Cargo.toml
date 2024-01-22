@@ -1,0 +1,11 @@
+[package]
+name = "adventofcode"
+version = "0.0.1"
+authors = ["Alok Menghrajani <alok@squareup.com>"]
+
+[dependencies]
+regex = "0.2"
+rust-crypto = "^0.2"
+fancy-regex = "0.13.0"
+lazy_static = "1.4.0"
+serde_json = "1.0"
