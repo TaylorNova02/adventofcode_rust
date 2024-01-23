@@ -198,7 +198,7 @@ fn main() {
         // (2020, 20) => year_2020::day20::run(inputs::read(year, day)),
         // (2020, 21) => year_2020::day21::run(inputs::read(year, day)),
         // (2020, 22) => year_2020::day22::run(inputs::read(year, day)),
-        // (2020, 23) => year_2020::day23::run(inputs::read(year, day)),
+        // (2020, 23) => year_2020::day23::run(792845136),
         // (2020, 24) => year_2020::day24::run(inputs::read(year, day)),
         // (2020, 25) => year_2020::day25::run(),
 
