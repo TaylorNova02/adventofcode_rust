@@ -11,3 +11,4 @@ Cargo.lock
 /.idea/adventofcode.iml
 /.idea/modules.xml
 /.idea/vcs.xml
+/.idea/jsonCatalog.xml
