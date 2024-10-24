@@ -1,3 +1,9 @@
+extern crate crypto;
+extern crate fancy_regex;
+#[macro_use]
+extern crate lazy_static;
+extern crate regex;
+extern crate serde_json;
 use std::env;
 
 mod common;
@@ -10,14 +16,6 @@ mod year_2020;
 mod year_2021;
 mod year_2022;
 mod year_2023;
-
-extern crate crypto;
-extern crate fancy_regex;
-extern crate regex;
-extern crate serde_json;
-
-#[macro_use]
-extern crate lazy_static;
 
 use common::inputs;
 
@@ -55,7 +53,7 @@ fn main() {
         (2015, 16) => year_2015::day16::run(inputs::read(year, day)),
         (2015, 17) => year_2015::day17::run(inputs::read(year, day)),
         (2015, 18) => year_2015::day18::run(inputs::read(year, day)),
-        // (2015, 19) => year_2015::day19::run(inputs::read(year, day)),
+        (2015, 19) => year_2015::day19::run(inputs::read(year, day)),
         // (2015, 20) => year_2015::day20::run(34000000),
         // (2015, 21) => year_2015::day21::run(inputs::read(year, day)),
         // (2015, 22) => year_2015::day22::run(inputs::read(year, day)),

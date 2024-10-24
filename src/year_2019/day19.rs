@@ -37,7 +37,7 @@ fn solve(input: Vec<String>) -> (String, u64) {
     loop {
         let c = *grid.entry((pos_x, pos_y)).or_insert(' ');
         match c {
-            'A'...'Z' => {
+            'A'..='Z' => {
                 letters.push(c);
             }
             '|' | '-' => {}
