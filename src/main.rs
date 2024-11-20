@@ -1,11 +1,10 @@
 extern crate crypto;
+extern crate divisors;
 extern crate fancy_regex;
 #[macro_use]
 extern crate lazy_static;
 extern crate regex;
 extern crate serde_json;
-use std::env;
-
 mod common;
 mod year_2015;
 mod year_2016;
@@ -18,6 +17,7 @@ mod year_2022;
 mod year_2023;
 
 use common::inputs;
+use std::env;
 
 fn main() {
     // Convert argv to a Vec<String>, so we can access elements using [] notation.
@@ -54,12 +54,12 @@ fn main() {
         (2015, 17) => year_2015::day17::run(inputs::read(year, day)),
         (2015, 18) => year_2015::day18::run(inputs::read(year, day)),
         (2015, 19) => year_2015::day19::run(inputs::read(year, day)),
-        // (2015, 20) => year_2015::day20::run(34000000),
+        (2015, 20) => year_2015::day20::run(34000000),
         // (2015, 21) => year_2015::day21::run(inputs::read(year, day)),
         // (2015, 22) => year_2015::day22::run(inputs::read(year, day)),
-        // (2015, 23) => year_2015::day23::run(inputs::read(year, day)),
-        // (2015, 24) => year_2015::day24::run(inputs::read(year, day)),
-        // (2015, 25) => year_2015::day25::run(inputs::read(year, day)),
+        (2015, 23) => year_2015::day23::run(inputs::read(year, day)),
+        (2015, 24) => year_2015::day24::run(inputs::read(year, day)),
+        (2015, 25) => year_2015::day25::run(inputs::grab_local_input(year, day)),
         (2015, _) => println!("work in progress..."),
 
         // 2016
